@@ -1,0 +1,114 @@
+img {
+  width: auto;
+  height: 300px;
+}
+
+h1 {
+  color: grey;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  /* text-align: center; */
+  padding: 16px;
+  text-decoration: none;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: lightslategray;
+  list-style-type: none;
+  gap: 20px;
+}
+
+ul li a {
+  padding: 20px;
+  display: block;
+  color: white;
+}
+
+li:hover {
+  background-color: greenyellow;
+}
+
+th {
+  background-color: #ff9300;
+  color: white;
+  padding: 10px 150px 10px 5px;
+
+  text-align: left;
+}
+tr:nth-child(odd) {
+  background-color: #ffdccb;
+}
+
+tr:nth-child(even) {
+  background-color: #ffeee7;
+}
+
+td {
+  padding: 10px 150px 10px 5px;
+}
+/* Boxes */
+
+/* #boxes {
+  background: url("https://www.pexels.com/fi-fi/kuva/kuvio-tekstuuri-seina-valkoinen-3616764/");
+} */
+
+.box {
+  display: inline-block;
+  margin: 32px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+  height: 200px;
+  width: 200px;
+  background: rgb(155, 155, 155);
+}
+
+.box1 {
+  background-color: violet;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  border-image: linear-gradient(to right, red, yellow);
+}
+
+.box2 {
+  background-color: rgb(58, 114, 225);
+  border-style: solid;
+  border-width: 5px;
+  border-color: lightseagreen lightgreen pink violet;
+
+  border-radius: 15%;
+}
+
+.box3 {
+  background-image: linear-gradient(to right, red, yellow);
+}
+
+.box4 {
+  background-color: rgb(58, 114, 225);
+  border-style: dotted;
+  border-color: white;
+  border-radius: 15%;
+  border-width: 3px;
+}
+
+.box5 {
+  background-color: rgb(118, 62, 215);
+  border-style: dashed;
+  border-width: 3px;
+  border-color: white;
+  border-radius: 50%;
+}
+
+body {
+  background-color: grey;
+}

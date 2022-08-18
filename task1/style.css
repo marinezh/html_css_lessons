@@ -1,0 +1,19 @@
+.important {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+}
+
+body {
+  background-color: coral;
+}
+
+#my_id {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+}
+
+/* any comment */
