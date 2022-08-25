@@ -40,6 +40,7 @@ th {
 
   text-align: left;
 }
+
 tr:nth-child(odd) {
   background-color: #ffdccb;
 }
@@ -111,4 +112,18 @@ td {
 
 body {
   background-color: grey;
+}
+
+main img {
+  float: right;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead {
+  color: white;
+  background: black;
+  font-weight: bold;
 }

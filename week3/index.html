@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input types</title>
+  </head>
+  <style>
+    body {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 16 px;
+    }
+
+    table {
+      margin: 20px;
+    }
+
+    table,
+    td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+
+    .center {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Input Example</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>type = "button"</td>
+          <td><input type="button" value="I am button" /></td>
+          <td>Needs value attribute for button text</td>
+        </tr>
+
+        <tr>
+          <td>type = "checkbox"</td>
+          <td><input type="checkbox" />Checkbox</td>
+          <td>Chekbox text comes after input tag</td>
+        </tr>
+        <tr>
+          <td>type = "color"</td>
+          <td><input type="color" value="green" /></td>
+          <td>With value you can set default color</td>
+        </tr>
+        <tr>
+          <td>tape = "range"</td>
+          <td><input type="range" min="20" max="40" /></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>tape = "date"</td>
+          <td><input type="date" /></td>
+        </tr>
+
+        <tr>
+          <td>tape = "radio"</td>
+          <td><input type="radio" /></td>
+        </tr>
+        <tr>
+          <td class="center" colspan="3">Select and textarea:</td>
+        </tr>
+        <tr>
+          <td>Select example:</td>
+          <td>
+            <select name="cars" size="4" multiply id="">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select>
+          </td>
+
+          <td>select is a wrapping options</td>
+        </tr>
+        <tr>
+          <td>Textarea</td>
+          <td>
+            <textarea
+              name="examplearea"
+              id="example1"
+              cols="20"
+              rows="5"
+            ></textarea>
+          </td>
+          <td>
+            The size of textarea can be specified by the cols and rows
+            attribute, or even through CSS height and width properties
+          </td>
+        </tr>
+        <tr>
+          <td>Datalist</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
