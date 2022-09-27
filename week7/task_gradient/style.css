@@ -1,0 +1,54 @@
+:root {
+--background-color: cornsilk;
+--light-color: skyblue;
+--hightlight-color: salmon;
+--dark-color: #333;
+--font: 'Quicksand', sans-serif;
+--gradient: linear-gradient(to right top,
+#151937,
+#004d7a,
+#008793,
+#00bf72,
+#a8eb12);
+}
+
+body {
+    background: var(--gradient);
+    height: 100vh;
+    font-family: var(--font);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.card {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 300px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: var(--light-color);
+    box-shadow: 0 0 15px var(--dark-color);
+    transition: all 2s;
+   
+}
+
+.card:hover {
+    /* transform: rotate(125deg); */
+    /* transform: skewX(25deg); */
+    transform: scale(2,1)
+}
+
+.menu-item h1::after {
+    content:"";
+    height: 4px;
+    width: 0;
+    background: var(--hightlight-color); 
+    display: inherit;
+    transition: 1s ease-in;
+}
+
+.menu-item:hover h1::after {
+    width: 100%
+}
