@@ -1,0 +1,99 @@
+:root {
+    --background-color: cornsilk;
+    --primary-color: skyblue;
+    --secondary-color: sandybrown;
+  }
+  
+  body {
+    background: var(--background-color);
+    /* display: grid;
+    justify-items: center;
+    align-items: center; */
+    /* height: 100vh; */
+    font-family: "Spartan", sans-serif;
+    margin: 3rem;
+  }
+  
+ body {
+background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+background-size: 400% 400%;
+animation: gradient 15s ease infinite;
+  }
+  
+ @keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50%{
+  background-position: 100% 50%;
+}
+100%{
+  background-position: 0% 50%;
+
+}
+
+  }
+  
+  .box {
+    background: var(--primary-color);
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 0 5px #333;
+    border-radius: 5px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .first-task {
+    background: var(--secondary-color);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+  
+
+  .second-task {
+    background: var(--secondary-color);
+    height: 100px;
+    width: 100px;
+  }
+
+  
+  .third-task {
+    background: var(--secondary-color);
+    height: 100px;
+    width: 100px;
+    transition: all 2s;
+    padding: 1rem;
+  }
+
+
+  
+  .fourth-task {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    background: goldenrod;
+  }
+  
+  .fourth-task h3 {
+    padding: 25px;
+  }
+  
+
+  
+  .animated-circle {
+    background: var(--primary-color);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 5px #333;
+  }
+  
+
