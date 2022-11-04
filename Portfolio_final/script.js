@@ -9,7 +9,6 @@ const modal = document.querySelector('.overlay')
 const modalClose = document.querySelector('.close')
 
 console.log(modalBtn);
-console.log(modalBtn);
 console.log(modal);
 console.log(modalClose);
 
