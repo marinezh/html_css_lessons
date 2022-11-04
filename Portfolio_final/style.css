@@ -35,6 +35,10 @@ label input{
   color: grey;
 }
 
+label {
+  font-size: 24px;
+}
+
 textarea {
   height: 100px;
   border-radius: 5px;
@@ -183,7 +187,6 @@ section:nth-child(even) {
 }
 
 h3 {
-  color: white;
   font-size: 32px;
 }
 
@@ -467,6 +470,10 @@ li a {
 
 /* FOOTER */
 
+footer h3 {
+  color: #112338;
+}
+
 #back_to_top {
   display: none;
   position: fixed;
@@ -479,7 +486,6 @@ form {
   flex-direction: column;
   justify-content: left;
   align-items: left;
-  
   font-size: 2rem;
 }
 
@@ -489,8 +495,8 @@ footer {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: white;
-  background-color: #112338;
+  color: #112338;
+  background-color: #e7e7e7;
 }
 
 /* .contact_container {
@@ -499,19 +505,15 @@ footer {
 } */
 
 footer h3 {
-  color: white;
-  margin-bottom: 50px;
-  margin-top: 30px;
+  color: #112338;
+  margin-bottom: 30px;
+  margin-top: 50px;
 }
 
-form{
-  display: flex;
-  flex-direction: column;
-}
+
 .contact_form {
   display: flex;
   flex-direction: column;
-  
   gap: 10px;
 }
 
@@ -538,11 +540,9 @@ transition: 0.5s;
 
 i:hover {
   color: #FF5252;
-
 }
 
 .btn_send {
-  
   background-color: #FF5252;
   width: 5rem;
   padding: 1px 3px 2px 3px;
@@ -551,46 +551,7 @@ i:hover {
 }
 
 i {
-  color: #e7e7e7;
-}
-
-
-/* MOBILE */
-
-@media (max-width: 800px) {
-  nav ul {
-    display: none;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  #mob_button {
-    background-color: transparent;
-    display: block;
-    border: none;
-    color: #112338;
-    padding: 1rem;
-  }
-
-  nav.responsive ul {
-    background-color: #FF5252;
-    border-radius: 10px;
-    width: 50%;
-    display: block;
-    position: absolute;
-    right: 0;
-    /* top: 85px; */
-  }
-
-  nav.responsive ul li {
-    display: block;
-  }
-
-  nav.responsive ul li a {
-    color: rgb(255, 255, 255);
-  }
+  color: #112338;
 }
 
 /* FOOTER WAVES */
@@ -598,16 +559,9 @@ i {
 .footer_waves {
   position:relative;
   text-align:center;
-  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
-  color:white;
+  
 }
-/* .logo {
-  width:50px;
-  fill:white;
-  padding-right:15px;
-  display:inline-block;
-  vertical-align: middle;
-} */
+
 
 .inner-header {
   height:65vh;
@@ -636,10 +590,11 @@ i {
   position:relative;
   height:20vh;
   text-align:end;
-  /* background-color: white; */
+  background-color: #112338;
+  width: 100%;
+  margin-top: -5px;
+  padding-bottom: 5px;
 }
-
-
 
 /* Animation */
 
@@ -683,3 +638,43 @@ i {
     font-size:24px;
   }
 }
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+  nav ul {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #mob_button {
+    background-color: transparent;
+    display: block;
+    border: none;
+    color: #112338;
+    padding: 1rem;
+  }
+
+  nav.responsive ul {
+    background-color: #FF5252;
+    border-radius: 10px;
+    width: 50%;
+    display: block;
+    position: absolute;
+    right: 0;
+    /* top: 85px; */
+  }
+
+  nav.responsive ul li {
+    display: block;
+  }
+
+  nav.responsive ul li a {
+    color: rgb(255, 255, 255);
+  }
+}
+
