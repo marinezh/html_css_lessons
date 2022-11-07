@@ -4,21 +4,9 @@ const mobButton = document.querySelector('#mob_button');
 const nav = document.querySelector('nav');
 let links = document.querySelectorAll('nav ul li a');
 
-const modalBtn = document.querySelector('#modal_btn');
-const modal = document.querySelector('.overlay')
-const modalClose = document.querySelector('.close')
-
-console.log(modalBtn);
-console.log(modal);
-console.log(modalClose);
-
-// modalBtn.onclick = function() {
-//     modal.style.display = "block";
-//   }
 
 window.onscroll = function () {
     scrollFunction();
-
 };
 
 const scrollFunction = () => {
@@ -47,36 +35,10 @@ const mobMenu = () => {
     }
 };
 
-
-
 for (const link of links) {
     link.addEventListener('click', mobMenu);
 }
 
-
-// const modalWinFunc = () => {
-//     console.log('clicked');
-//     modal.style.display = 'block'
-//     }
-
-//    const modalWinClose = () => {
-//     modal.style.display = 'none'
-//    }
-
-
 backButton.addEventListener('click', getToTop);
 mobButton.addEventListener('click', mobMenu);
 
-// modalBtn.addEventListener('click', modalWinFunc);
-// modalClose.addEventListener('click', modalWinClose);
-
-
-
-const modalFunc = () => {
-    modal.classList.toggle('visible')
-}
-
-
-modalBtn.addEventListener('click', modalFunc);
-modalClose.addEventListener('click', modalFunc);
-// modul func insted modalwinFunc and modalWinClose
